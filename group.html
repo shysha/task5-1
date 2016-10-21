@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>学员分组</title>
+    <link rel="stylesheet" type="text/css" href="groupstyle.css">
+</head>
+
+<body>
+<!-- 页面部分 -->
+   <h1>拙劣的成绩查询系统</h1>
+   <h5>查询方法：请在后台代ach码后输入成绩，刷新页面后可查看成绩排名</h5>
+   <!-- js部分 -->
+    <script type="text/javascript">
+    // 成绩输出处 ，请输入成绩    
+    var ach = 56;
+    if (ach >= 90 && ach <= 100) {
+        document.write("<b>一等生</b>");
+    } else if (ach >= 80 && ach < 90) {
+        document.write("<b>二等生</b>");
+    } else if (ach >= 80 && ach < 90) {
+        document.write("<b>二等生</b>");
+    } else if (ach >= 70 && ach < 80) {
+        document.write("<b>三等生</b>");
+    } else if (ach >= 60 && ach < 70) {
+        document.write("<b>四等生</b>");
+    } else if (ach >= 50 && ach < 60) {
+        document.write("<b>五等生</b>");
+    } else if (ach >= 40 && ach < 50) {
+        document.write("<b>六等生</b>");
+    } else if (ach >= 30 && ach < 40) {
+        document.write("<b>七等生</b>");
+    } else if (ach >= 20 && ach < 30) {
+        document.write("<b>八等生</b>");
+    } else if (ach >= 10 && ach < 20) {
+        document.write("<b>九等生</b>");
+    } else if (ach >= 0 && ach < 10) {
+        document.write("<b>十等生</b>");
+    } else {//当成绩大于100或是小于0时执行
+        document.write("<b>请输入正确分值!</b>");
+    }
+    </script>
+</body>
+
+</html>
